@@ -1,0 +1,94 @@
+1. To split equation : 
+
+
+\begin{equation}
+\begin{split}
+1+2+3+4+8x+7 & =1+2+3+4+4x+35 \\
+& \Rightarrow x=7
+\end{split}
+\end{equation}
+
+2. Include on top
+
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc} 
+\usepackage{authblk}
+\usepackage[margin=1in]{geometry}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage[tbtags]{amsmath}
+\usepackage{caption}
+\usepackage{subcaption}
+
+3.FIgure and Subfigure
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.3\textwidth}
+		\centering
+		\includegraphics[scale=0.07]{emacslogo.png}
+		\caption{Emacs}
+	\end{subfigure}%
+	\begin{subfigure}{.3\textwidth}
+			\centering
+		\includegraphics[scale=0.25]{nanologo.png}
+		\caption{Nano}
+	\end{subfigure}%
+	\begin{subfigure}{.3\textwidth}
+			\centering
+		\includegraphics[scale=0.06]{vimlogo.png}
+		\caption{Vim}
+	\end{subfigure}%
+	\caption{Terminal-based text-editors}
+	\label{fig:1}
+\end{figure}
+
+4.Writing matrix
+
+\[
+\begin{bmatrix}
+    x_{11}       & x_{12} & x_{13} & \dots & x_{1n} \\
+    x_{21}       & x_{22} & x_{23} & \dots & x_{2n} \\
+    \hdotsfor{5} \\
+    x_{d1}       & x_{d2} & x_{d3} & \dots & x_{dn}
+\end{bmatrix}
+=
+\begin{bmatrix}
+    x_{11} & x_{12} & x_{13} & \dots  & x_{1n} \\
+    x_{21} & x_{22} & x_{23} & \dots  & x_{2n} \\
+    \vdots & \vdots & \vdots & \ddots & \vdots \\
+    x_{d1} & x_{d2} & x_{d3} & \dots  & x_{dn}
+\end{bmatrix}
+\]
+
+5. Bibliography
+\usepackage{biblatex}
+\addbibresource{ref.bib}
+\printbibliography
+
+6. author and affil
+
+\title{CSE 300: Online Assignment}
+\author[1, *]{Md Shamsuzzoha Bayzid}
+\author[1, \textdagger]{Mahjabin Nahar}
+\author[1, \textdagger]{Md Shariful Islam Bhuyan}
+\author[1, \textdagger]{Md Saidur Rahman}
+\affil[1]{Department of Computer Science and Engineering Bangladesh University of Engineering and Technology}
+\affil[*]{Corresponding author: shams bayzid@cse.buet.ac.bd}
+\affil[ \textdagger]{These authors contributed equally to this work}
+\date{April 07, 2021}
+
+\title{CSE 300: Online Assignment}
+\author[1]{Md Shamsuzzoha Bayzid}
+\author[1]{Mahjabin Nahar}
+\author[1]{Md Shariful Islam Bhuyan}
+\author[1]{Md Saidur Rahman}
+\affil[ ]{Department of Computer Science and Engineering Bangladesh University of Engineering and Technology}
+\affil[ ]{Corresponding author: shams bayzid@cse.buet.ac.bd}
+\affil[ ]{These authors contributed equally to this work}
+\date{April 07, 2021}
+
+
